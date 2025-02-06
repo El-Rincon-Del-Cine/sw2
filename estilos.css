@@ -29,7 +29,10 @@ body {
 }
 
 .menu-navegacion {
-    margin-top: 50px;
+    position: absolute;
+    top: 0; /* Asegura que el menú se quede arriba */
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +40,7 @@ body {
     text-align: center;
     height: 50px;
     flex-wrap: wrap;
+    z-index: 2; /* Asegura que el menú esté por encima del header */
 }
 
 .menu-navegacion a {
@@ -53,6 +57,7 @@ body {
 }
 
 header {
+    position: relative;
     color: white;
     background-image: linear-gradient(to top, rgba(24, 24, 72, 0.7), rgba(0, 0, 0, 0.7)), url('imagenes/unam.jpg');
     background-repeat: no-repeat;
@@ -64,6 +69,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 20px;
+    z-index: 1; /* Asegura que el header no tape otros elementos */
 }
 
 .titulo {
