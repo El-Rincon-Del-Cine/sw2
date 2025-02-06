@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yantramanav", sans-serif; 
+}
+
+.contact-btn {
+    margin-top: 50px;
+    background-color: white;
+    color: #181848;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: "Yantramanav", sans-serif; 
+    display: block;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: #f0a818;
+}
+
+.menu-navegacion {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181848;
+    text-align: center;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+.menu-navegacion a {
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-family: "Yantramanav", sans-serif; 
+    margin: 15px;
+}
+
+.menu-navegacion a:hover {
+    color: #f0a818;
+}
+
+header {
+    color: white;
+    background-image: linear-gradient(to top, rgba(24, 24, 72, 0.7), rgba(0, 0, 0, 0.7)), url('imagenes/unam.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo {
+    padding-top: 120px;
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.intro {
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 35px;
+    color: #f0a818;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 24px;
+}
+
+footer {
+    padding: 30px;
+    background-color: #181848;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contacto {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto p {
+    font-size: 22px;
+    color: white;
+}
+
+.footer-logo {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-info p {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.iconos {
+    filter: invert(100%);
+}
+
+.ubi {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 30px auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .titulo {
+        font-size: 50px;
+    }
+    
+    .intro {
+        font-size: 28px;
+    }
+    
+    .contact-btn {
+        font-size: 22px;
+    }
+
+    .menu-navegacion a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 40px;
+    }
+    
+    .intro {
+        font-size: 24px;
+    }
+    
+    .contact-btn {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .menu-navegacion {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .menu-navegacion a {
+        font-size: 16px;
+        margin: 10px;
+    }
+    
+    .contacto p {
+        font-size: 18px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
